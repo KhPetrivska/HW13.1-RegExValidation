@@ -55,10 +55,7 @@ messageInput.addEventListener("input", (event) => {
 
 //Phone
 const pHint = phoneInput.nextElementSibling;
-phoneInput.addEventListener("focus", (event) => {
-  phoneInput.value = "+380";
-  pHint.style.display = "";
-});
+
 
 phoneInput.addEventListener("input", (event) => {
   let phoneValue = phoneInput.value.trim();
