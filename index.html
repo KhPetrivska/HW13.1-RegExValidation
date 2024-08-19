@@ -1,1 +1,45 @@
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form>
+      <h1>We would like to help you</h1>
+      <div class="container">
+        <input id="name" name="name" placeholder="Name" required />
+        <span class="n-hint hint" style="display: none">*Required field</span>
+        <textarea
+          id="message"
+          type="text"
+          name="message"
+          rows="4"
+          placeholder="Message"
+          style="resize:vertical;"
+        ></textarea>
+        <span class="m-hint hint" style="display: none"
+          >At least 5 symbols</span
+        >
+      </div>
+      <div class="container">
+        <h4>HOW TO UNSWER YOU?</h4>
+        <input
+          type="tel"
+          id="ph-number"
+          name="number"
+          placeholder="Phone number"
+          pattern="\d*"
+          required
+        />
+        <span class="p-hint hint" style="display: none">*Required field</span>
+        <input id="email" name="email" placeholder="Email" required />
+        <span class="e-hint hint" style="display: none">*Required field</span>
+        <button>Send message</button>
+      </div>
+    </form>
+  </body>
+  <script src="index.js"></script>
+</html>
